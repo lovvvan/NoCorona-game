@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 1604526080}
   - component: {fileID: 1604526079}
   - component: {fileID: 1604526082}
+  - component: {fileID: 1604526083}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -339,7 +340,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 934c39f8cf744494bbbeb4ef10bf96a0, type: 3}
+  m_Sprite: {fileID: -4599224521187857354, guid: aa72711afa65d40499a28aa28077ac41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -358,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604526078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.03, z: 0}
+  m_LocalPosition: {x: 0.03, y: -0.03, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -372,7 +373,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604526078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2a27e47b50eb0834b85c312dd4d17c00, type: 2}
   m_CullingMode: 0
@@ -383,6 +384,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &1604526083
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604526078}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 8a0ab3e1bebaa7e488ae813fbbfaa56f, type: 2}
+  - {fileID: 7400000, guid: 171db1fd6ca06164485e21a6d375fe5f, type: 2}
+  - {fileID: 7400000, guid: a6e670bb0639c4545b221612ed626bc8, type: 2}
+  - {fileID: 7400000, guid: e20627455a9eb16428ceb10591add341, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1753745872
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,11 +449,18 @@ MonoBehaviour:
   map: {fileID: 0}
   mapData:
   - {fileID: 2800000, guid: f9735e190f522fc468619f2ae511f9b3, type: 3}
+  - {fileID: 2800000, guid: d25f7ae7d77760b4cbe47677aab96b13, type: 3}
   mapElements:
   - tileTag: Floor1
-    color: {r: 0, g: 0.7607843, b: 0.105882354, a: 1}
-    elementPrefab: {fileID: 8281999951248327926, guid: 52bf04759159da14ba4c1e93ae134477, type: 3}
-  - tileTag: Hole1
     color: {r: 0, g: 0, b: 0, a: 1}
-    elementPrefab: {fileID: 5046580524140135439, guid: 5d4253865d00f8748898a1beb859f2e4, type: 3}
+    elementPrefab: {fileID: 8281999951248327926, guid: 52bf04759159da14ba4c1e93ae134477, type: 3}
+  - tileTag: Floor2
+    color: {r: 0, g: 0.7607843, b: 0.105882354, a: 1}
+    elementPrefab: {fileID: 1288233571931168653, guid: c913bd515ecb7724ebd312bb31229a15, type: 3}
+  - tileTag: Bookcase1
+    color: {r: 0.92941177, g: 0.5254902, b: 0, a: 1}
+    elementPrefab: {fileID: 9036956351428577288, guid: 3fa9f9c521dc0254aa65f08ed989221b, type: 3}
+  - tileTag: Dresser
+    color: {r: 0.6392157, g: 0.36078432, b: 0, a: 1}
+    elementPrefab: {fileID: 2690537518171689642, guid: 44f00e7e0b3b8de4489edf4dab023a85, type: 3}
   defaultTile: {fileID: -8946502823204651960, guid: f0ba9c33f4ed7c54db184ab5507e734e, type: 3}
