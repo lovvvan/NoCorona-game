@@ -33,6 +33,8 @@ public class LevelManager : MonoBehaviour
     }
     private void GenerateMap()
     {
+        int height = mapData[0].height;
+        int width = mapData[0].width;
         for (int i = 0; i < mapData.Length; i++)
         {
             for (int x = 0; x < mapData[i].width; x++)
@@ -44,9 +46,13 @@ public class LevelManager : MonoBehaviour
                     if (newElement != null)
                     {
                         float xPos = WorldStartPos.x + (defaultTile.bounds.size.x * x);
-                        float yPos = WorldStartPos.y + (defaultTile.bounds.size.y * y);
+                        float yPos = WorldStartPos.y + (defaultTile.bounds.size.y* y);
                         GameObject go = Instantiate(newElement.MyElementPrefab);
                         go.transform.position = new Vector2(xPos,yPos);
+                        if (newElement.MyTileTag == "Bookcase1" || newElement.MyTileTag == "Dresser")
+                        {
+                            go.GetComponent<SpriteRenderer>().sortingOrder = height*2 - y*2;
+                        }
                         go.transform.parent = map;
                     }
                 }
