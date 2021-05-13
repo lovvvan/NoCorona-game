@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class Player : Character
 {
+    private static Player myInstance;
+    public static Player MyInstance
+    {
+      get
+      {
+        if(myInstance == null)
+        {
+          myInstance = FindObjectOfType<Player>();
+        }
+        return myInstance;
+      }
+    }
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -15,6 +28,11 @@ public class Player : Character
     {
         GetInput();
         base.Update();
+    }
+
+    public override void TakeDamage(int damage)
+    {
+      base.TakeDamage(damage);
     }
 
     private void GetInput()

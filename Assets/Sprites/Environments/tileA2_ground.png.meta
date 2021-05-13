@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: a1a663c7076965b4b95ef75109369c38
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1383599193138425026
+    second: BrickWhiteNW
+  - first:
+      213: 1549599376114793154
+    second: BrickWhiteN
+  - first:
+      213: -756153473826421647
+    second: BrickWhiteNE
+  - first:
+      213: -5108018414972799134
+    second: BrickWhiteW
+  - first:
+      213: -5226727412310791070
+    second: BrickWhite
+  - first:
+      213: 1894640742174093910
+    second: BrickWhiteE
+  - first:
+      213: -1821943514658163330
+    second: BrickWhiteSW
+  - first:
+      213: -2520241919961521042
+    second: BrickWhiteS
+  - first:
+      213: -904206718329510291
+    second: BrickWhiteSE
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +128,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BrickWhiteNW
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc6882b228833310800000000000000
+      internalID: 1383599193138425026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhiteN
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca3d752c68418510800000000000000
+      internalID: 1549599376114793154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhiteNE
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17406ecfb6a9185f0800000000000000
+      internalID: -756153473826421647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhiteW
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2677465a05cac19b0800000000000000
+      internalID: -5108018414972799134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhite
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c2b636c1fe677b0800000000000000
+      internalID: -5226727412310791070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhiteE
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652f44e77bd1b4a10800000000000000
+      internalID: 1894640742174093910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhiteSW
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7539f7c60827b6e0800000000000000
+      internalID: -1821943514658163330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhiteS
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6425ac935d460dd0800000000000000
+      internalID: -2520241919961521042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrickWhiteSE
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66a276c7cc9373f0800000000000000
+      internalID: -904206718329510291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
