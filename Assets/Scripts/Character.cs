@@ -29,6 +29,7 @@ public abstract class Character : MonoBehaviour
       if(health<=0)
       {
         animator.SetTrigger("Die");
+        animator.SetLayerWeight(2,1);
       }
     }
 
