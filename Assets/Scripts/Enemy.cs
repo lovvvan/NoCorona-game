@@ -40,7 +40,7 @@ public class Enemy: Character
     private void GetInput()
     {
         direction = Vector2.zero;
-        direction += Vector2.down;
+        direction += Vector2.left;
 
     }
 }
