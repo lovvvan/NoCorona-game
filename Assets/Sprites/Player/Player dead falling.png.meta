@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: da7038e42502174429f63fe6cb6d0584
+guid: 5b809573e02794e44bd6fa4724d95bd9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -590937669212434028
-    second: Player dead_0
+      213: -261041351568206018
+    second: Player dead falling_0
   - first:
-      213: 4453013541331446679
-    second: Player dead_1
+      213: -1861501344034218208
+    second: Player dead falling_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -38,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player dead_0
+      name: Player dead falling_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 43
-        height: 26
+        y: 2
+        width: 38
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491123e12519cc7f0800000000000000
-      internalID: -590937669212434028
+      spriteID: e37d6181648906cf0800000000000000
+      internalID: -261041351568206018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player dead_1
+      name: Player dead falling_1
       rect:
         serializedVersion: 2
         x: 43
@@ -144,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ba01709384ccd30800000000000000
-      internalID: 4453013541331446679
+      spriteID: 02f9de7e36e9a26e0800000000000000
+      internalID: -1861501344034218208
       vertices: []
       indices: 
       edges: []
