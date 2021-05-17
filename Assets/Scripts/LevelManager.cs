@@ -42,6 +42,8 @@ public class LevelManager : MonoBehaviour
                 for (int y = 0; y < mapData[i].height; y++)
                 {
                     Color c = mapData[i].GetPixel(x,y);
+                    
+                    
                     MapElement newElement = Array.Find(mapElements, e => e.MyColor == c);
                     if (newElement != null)
                     {
@@ -49,7 +51,7 @@ public class LevelManager : MonoBehaviour
                         float yPos = WorldStartPos.y + (defaultTile.bounds.size.y* y);
                         GameObject go = Instantiate(newElement.MyElementPrefab);
                         go.transform.position = new Vector2(xPos,yPos);
-                        if (newElement.MyTileTag == "Bookcase1" || newElement.MyTileTag == "Dresser")
+                        if (newElement.MyTileTag == "Tree1" || newElement.MyTileTag == "Tree2" || newElement.MyTileTag == "Flower")
                         {
                             go.GetComponent<SpriteRenderer>().sortingOrder = height*2 - y*2;
                         }
