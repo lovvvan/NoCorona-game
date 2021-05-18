@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public abstract class Character : MonoBehaviour
 {
@@ -31,7 +32,14 @@ public abstract class Character : MonoBehaviour
         speed = 0;
         animator.SetTrigger("Die");
         animator.SetLayerWeight(2,1);
+      //  SceneManager.LoadScene("Menu");
+       Invoke("LoadMenuScene",2f);
       }
+    }
+
+    private void LoadMenuScene()
+    {
+      SceneManager.LoadScene("Menu");
     }
 
     public void Move()
