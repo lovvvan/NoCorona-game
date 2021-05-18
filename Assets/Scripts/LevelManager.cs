@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
                         float yPos = WorldStartPos.y + (defaultTile.bounds.size.y* y);
                         GameObject go = Instantiate(newElement.MyElementPrefab);
                         go.transform.position = new Vector2(xPos,yPos);
-                        if (newElement.MyTileTag == "Tree1" || newElement.MyTileTag == "Tree2" || newElement.MyTileTag == "Flower")
+                        if (newElement.MyTileTag == "Tree01" || newElement.MyTileTag == "Tree06" || newElement.MyTileTag == "Flower")
                         {
                             go.GetComponent<SpriteRenderer>().sortingOrder = height*2 - y*2;
                         }
