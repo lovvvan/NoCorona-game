@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 707579979f9d30946a28e99f0b3a1875, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 1604526078}
   boundBox: {fileID: 1230015976}
 --- !u!20 &519420031
@@ -352,6 +352,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1559331399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559331400}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1559331400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559331399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.918677, y: 2.9116673, z: 0.32341132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1604526078
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,8 +413,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55eeb8a1b421a6e4691aa0c0eeaf3925, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speed: 1
   health: 10
 --- !u!212 &1604526080
@@ -467,7 +497,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -559,8 +589,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 381f64f93199df941817da73d7efe791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   map: {fileID: 543017821}
   mapData:
   - {fileID: 2800000, guid: f9735e190f522fc468619f2ae511f9b3, type: 3}
@@ -612,16 +642,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e62f36fc17f1406ca4dd67eff0b5122, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   spawnZones:
-  - {fileID: 543017821}
+  - {fileID: 1559331400}
   enemyPrefabs:
   - {fileID: 8896973566405189829, guid: 93a20ad5dfb484855ad544367f8a51c5, type: 3}
   - {fileID: 8180490729646565072, guid: 3343e41f2d82a422ea17e13b62aa4721, type: 3}
   - {fileID: 5409024035828615296, guid: 865e4afe472c8488394450a35e70dba2, type: 3}
+  - {fileID: 4679341501762862352, guid: 635fc131630714d728de7df27d013dcc, type: 3}
+  - {fileID: 6773230943464956528, guid: 4784503407f064511a4a56afdcc92dca, type: 3}
   enemyList: []
-  maxSpawn: 3
+  maxSpawn: 6
 --- !u!4 &1775190018
 Transform:
   m_ObjectHideFlags: 0
@@ -634,7 +666,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2119707111
 GameObject:
@@ -663,8 +695,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13dae1a0ddb34fa18b792cab39c5e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 1604526079}
 --- !u!4 &2119707113
 Transform:
@@ -678,5 +710,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
