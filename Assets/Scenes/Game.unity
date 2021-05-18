@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 707579979f9d30946a28e99f0b3a1875, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   player: {fileID: 1604526078}
 --- !u!20 &519420031
 Camera:
@@ -342,8 +342,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55eeb8a1b421a6e4691aa0c0eeaf3925, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 1
   health: 10
 --- !u!212 &1604526080
@@ -426,7 +426,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -518,8 +518,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 381f64f93199df941817da73d7efe791, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   map: {fileID: 543017821}
   mapData:
   - {fileID: 2800000, guid: f9735e190f522fc468619f2ae511f9b3, type: 3}
@@ -571,8 +571,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e62f36fc17f1406ca4dd67eff0b5122, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   spawnZones:
   - {fileID: 1559331400}
   enemyPrefabs:
@@ -581,6 +581,8 @@ MonoBehaviour:
   - {fileID: 5409024035828615296, guid: 865e4afe472c8488394450a35e70dba2, type: 3}
   - {fileID: 4679341501762862352, guid: 635fc131630714d728de7df27d013dcc, type: 3}
   - {fileID: 6773230943464956528, guid: 4784503407f064511a4a56afdcc92dca, type: 3}
+  - {fileID: 195411380233890877, guid: b108993c08a834a67b518d05ac5f5413, type: 3}
+  - {fileID: 2585866235343108034, guid: b24bef394eceb4333a6dee4407645b3d, type: 3}
   enemyList: []
   maxSpawn: 6
 --- !u!4 &1775190018
@@ -624,8 +626,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a13dae1a0ddb34fa18b792cab39c5e18, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   player: {fileID: 1604526079}
 --- !u!4 &2119707113
 Transform:
