@@ -33,13 +33,13 @@ public abstract class Character : MonoBehaviour
         animator.SetTrigger("Die");
         animator.SetLayerWeight(2,1);
       //  SceneManager.LoadScene("Menu");
-       Invoke("LoadMenuScene",2f);
+       Invoke("LoadExitScene",2f);
       }
     }
 
-    private void LoadMenuScene()
+    private void LoadExitScene()
     {
-      SceneManager.LoadScene("Menu");
+      SceneManager.LoadScene("GameOver");
     }
 
     public void Move()
