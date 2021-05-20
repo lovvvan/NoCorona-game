@@ -34,15 +34,11 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        transform.position = player.transform.position + offset;
         float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
         float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
+        
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
 
-    // LateUpdate is called after Update each frame
-    void LateUpdate()
-    {
-        // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = player.transform.position + offset;
-    }
 }
