@@ -7,7 +7,7 @@ public class LayerSorter : MonoBehaviour
     
     private SpriteRenderer parentRenderer;
 
-    private List<Obstacle>obstacles = new List<Obstacle>();
+    private List<Obstacle> obstacles = new List<Obstacle>();
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,8 @@ public class LayerSorter : MonoBehaviour
     {
         if(collision.tag == "Obstacle")
         {
+            Obstacle o = collision.GetComponent<Obstacle>();
+
              parentRenderer.sortingOrder = collision.GetComponent<SpriteRenderer>().sortingOrder - 1;
         }
         
