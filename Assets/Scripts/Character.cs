@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public abstract class Character : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
+    protected float speed;
     private Animator animator;
     protected Vector2 direction;
 
