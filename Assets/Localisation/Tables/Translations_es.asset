@@ -34,5 +34,21 @@ MonoBehaviour:
     m_Localized: Cambiar idioma
     m_Metadata:
       m_Items: []
+  - m_Id: 1536234014142464
+    m_Localized: "\rJUEGO TERMINADO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1537251166416896
+    m_Localized: JUEGA DE NUEVO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538421851189248
+    m_Localized: Utilice las teclas de flecha o W, A, S, D para moverse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538774298554368
+    m_Localized: "\xA1Evita a la gente!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

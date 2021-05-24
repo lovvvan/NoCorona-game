@@ -34,5 +34,21 @@ MonoBehaviour:
     m_Localized: "Byt spr\xE5k"
     m_Metadata:
       m_Items: []
+  - m_Id: 1536234014142464
+    m_Localized: "SPEL \xD6VER"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1537251166416896
+    m_Localized: SPELA IGEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538421851189248
+    m_Localized: "Anv\xE4nd piltangenterna W, A, S, D f\xF6r att g\xE5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538774298554368
+    m_Localized: "Undvik m\xE4nniskorna!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

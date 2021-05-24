@@ -34,5 +34,21 @@ MonoBehaviour:
     m_Localized: Change language
     m_Metadata:
       m_Items: []
+  - m_Id: 1536234014142464
+    m_Localized: GAME OVER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1537251166416896
+    m_Localized: PLAY AGAIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538421851189248
+    m_Localized: Use the arrow keys or W, A, S, D to move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538774298554368
+    m_Localized: Avoid the people!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

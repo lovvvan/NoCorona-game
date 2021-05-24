@@ -31,6 +31,22 @@ MonoBehaviour:
     m_Key: Change language
     m_Metadata:
       m_Items: []
+  - m_Id: 1536234014142464
+    m_Key: Game over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1537251166416896
+    m_Key: Play again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538421851189248
+    m_Key: Use arrow keys
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1538774298554368
+    m_Key: Avoid the people!
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
