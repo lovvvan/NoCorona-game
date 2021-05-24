@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1207765236418816949}
   - component: {fileID: 1749892514229577917}
+  - component: {fileID: -2327406793199806407}
   m_Layer: 0
   m_Name: tree06
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2327406793199806407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6094933051868050311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae033865af0f19a439f888a45d3f887f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
