@@ -26,14 +26,35 @@ public class LayerSorter : MonoBehaviour
         if(collision.tag == "Obstacle")
         {
             Obstacle o = collision.GetComponent<Obstacle>();
+            o.FadeOut();
 
-             parentRenderer.sortingOrder = collision.GetComponent<SpriteRenderer>().sortingOrder - 1;
+            if (obstacles.Count == 0 || o.MySpriteRenderer.sortingOrder -1 < parentRenderer.sortingOrder)
+            {
+                parentRenderer.sortingOrder = o.MySpriteRenderer.sortingOrder - 1;
+            }
+
+            obstacles.Add(o);
         }
         
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        parentRenderer.sortingOrder = 200;
+        if (collision.tag == "Obstacle")
+        {
+            Obstacle o = collision.GetComponent<Obstacle>();
+            o.FadeIn();
+            obstacles.Remove(o);
+            if (obstacles.Count == 0)
+            {
+                parentRenderer.sortingOrder = 200;
+            }
+            else
+            {
+                obstacles.Sort();
+                parentRenderer.sortingOrder = obstacles[0].MySpriteRenderer.sortingOrder - 1;
+            }
+        }
+        
     }
 }
