@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//Event system, is created when UI elements are added
 public class CreateEventSystem : MonoBehaviour
 {
     void Start()

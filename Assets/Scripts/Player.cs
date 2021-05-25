@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
+  //Makes the player a singleton
     private static Player myInstance;
     public static Player MyInstance
     {
@@ -21,12 +22,14 @@ public class Player : Character
     private Vector3 position;
 
     // Start is called before the first frame update
+    //Uses the character start as a base
     protected override void Start()
     {
         base.Start();
     }
 
     // Update is called once per frame
+    //Uses the character update as a base
     protected override void Update()
     {
         GetInput();
@@ -58,11 +61,13 @@ public class Player : Character
         SceneManager.LoadScene("Finished");
     }
 
+    //Uses the character take damage as a base
     public override void TakeDamage(int damage)
     {
       base.TakeDamage(damage);
     }
 
+    //Moves the character in the direction of the key input, checks for both W,A,S,D and arrow keys
     private void GetInput()
     {
         direction=Vector2.zero;

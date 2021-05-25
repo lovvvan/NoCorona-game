@@ -8,6 +8,7 @@ public class LocaleDropdown : MonoBehaviour
 {
     public TMP_Dropdown dropdown;
 
+    //TODO: What does this function do?
     IEnumerator Start()
     {
         // Wait for the localization system to initialize, loading Locales, preloading etc.

@@ -9,8 +9,9 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
     public SpriteRenderer MySpriteRenderer { get; set; }
 
     private Color defaultColor;
-    private Color fadedColor; 
+    private Color fadedColor;
 
+    //TODO: What does this function do?
     public int CompareTo(Obstacle other)
     {
         if (MySpriteRenderer.sortingOrder > other.MySpriteRenderer.sortingOrder)
@@ -26,6 +27,7 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
     }
 
     // Start is called before the first frame update
+    //TODO: What does this function do?
     void Start()
     {
         MySpriteRenderer = GetComponent<SpriteRenderer>();
@@ -35,19 +37,16 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
         fadedColor.a = 0.7f;
     }
 
+    //Sets the sprites color to a faded one
     public void FadeOut()
     {
         MySpriteRenderer.color = fadedColor;
     }
 
+    //Sets the color back to the default
     public void FadeIn()
     {
         MySpriteRenderer.color = defaultColor;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

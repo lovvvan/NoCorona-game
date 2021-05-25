@@ -13,6 +13,8 @@ public class LevelManager : MonoBehaviour
     private MapElement[] mapElements;
     [SerializeField]
     private Sprite defaultTile;
+
+    //Initializes the world start position to the lower left corner of the camera
     private Vector3 WorldStartPos
     {
         get
@@ -20,17 +22,15 @@ public class LevelManager : MonoBehaviour
             return Camera.main.ScreenToWorldPoint(new Vector3(0,0));
         }
     }
-    // Start is called before the first frame update
+
+    //Generate the map before the first frame update
     void Start()
     {
         GenerateMap();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    //TODO: What does this do?
     private void GenerateMap()
     {
         int height = mapData[0].height;
@@ -42,8 +42,8 @@ public class LevelManager : MonoBehaviour
                 for (int y = 0; y < mapData[i].height; y++)
                 {
                     Color c = mapData[i].GetPixel(x,y);
-                    
-                    
+
+
                     MapElement newElement = Array.Find(mapElements, e => e.MyColor == c);
                     if (newElement != null)
                     {
@@ -63,6 +63,7 @@ public class LevelManager : MonoBehaviour
     }
 }
 
+//TODO: Please explain this class and its methods
 [Serializable]
 public class MapElement
 {
