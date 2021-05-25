@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    //[SerializeField]
-    //private Transform[] spawnZones; // Array filled with spawn zones transform
+    [SerializeField]
+    private Transform enemies;
 
     [SerializeField]
     private GameObject[] enemyPrefabs; // All available enemy prefabs stored here
@@ -42,22 +42,22 @@ public class EnemySpawn : MonoBehaviour
         //Debug.Log(camPos);
     }
 
-    //Spawn the enemies by declaring the spawn zone number and the enemy number
-    //Then sets these to random numbers within their respective ranges
+    //Spawn the enemies by randomising a spawn location and an enemy type
     //Then it adds this random enemy and the random spawn zone to the enemy list and the game
     private void SpawnEnemy()
     {
-        int spawnNum;
-        int enemyNum;
+        int enemyType;
 
         while (enemyList.Count < maxSpawn)
         {
             //spawnNum = Random.Range(0, spawnZones.Length - 1); // Grabs a random number
-            spawnPoint.x = Random.Range(halfWidth *2, 50);
-            spawnPoint.y = Random.Range(halfHeight, halfHeight + 2);
+            spawnPoint.x = Random.Range(halfWidth * 1.8f, 100);
+            spawnPoint.y = Random.Range(halfHeight - 0.1f, halfHeight + 1.7f);
             spawnPoint.z = 0;
-            enemyNum = Random.Range(0, enemyPrefabs.Length - 1); // Grabs a random number
-            enemyList.Add(Instantiate(enemyPrefabs[enemyNum], spawnPoint, Quaternion.identity));
+            enemyType = Random.Range(0, enemyPrefabs.Length); // Grabs a random number
+            GameObject go = Instantiate(enemyPrefabs[enemyType], spawnPoint, Quaternion.identity);
+            go.transform.parent = enemies;
+            enemyList.Add(go);
         }
 
 

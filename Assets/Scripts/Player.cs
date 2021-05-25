@@ -44,8 +44,8 @@ public class Player : Character
     private bool hasWon()
     {
         position = GameObject.Find("Player").transform.position;
-        Debug.Log("position");
-        Debug.Log(position.x);
+        //Debug.Log("position");
+        //Debug.Log(position.x);
         if(position.x > 22)
         {
             return true;
