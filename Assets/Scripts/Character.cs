@@ -21,7 +21,7 @@ public abstract class Character : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        Move();
+        Move();    
     }
 
     public virtual void TakeDamage(int damage)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
@@ -17,6 +18,8 @@ public class Player : Character
       }
     }
 
+    private Vector3 position;
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -28,6 +31,31 @@ public class Player : Character
     {
         GetInput();
         base.Update();
+
+        if (hasWon())
+        {
+            Invoke("LoadWonScene", 1f);
+        }
+    }
+
+    private bool hasWon()
+    {
+        position = GameObject.Find("Player").transform.position;
+        Debug.Log("position");
+        Debug.Log(position.x);
+        if(position.x > 22)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void LoadWonScene()
+    {
+        SceneManager.LoadScene("Finished");
     }
 
     public override void TakeDamage(int damage)

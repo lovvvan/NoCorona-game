@@ -35,7 +35,7 @@ public class TutorialManager : MonoBehaviour
       {
         if(waitTime1<=0)
         {
-          Debug.Log("Enemy spawn 1!");
+          //Debug.Log("Enemy spawn 1!");
           EnemySpawn.SetActive(true);
           waitTime2-=Time.deltaTime;
         }
@@ -45,7 +45,7 @@ public class TutorialManager : MonoBehaviour
         }
         if(waitTime2<=0)
         {
-          Debug.Log("Enemy spawn 2!");
+          //Debug.Log("Enemy spawn 2!");
           popUpIndex++;
         }
         else
