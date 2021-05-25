@@ -7,7 +7,6 @@ public class Won : MonoBehaviour
 {
     public void PlayAgain()
     {
-        Debug.Log("play!!!");
         SceneManager.LoadScene("Game");
     }
 
