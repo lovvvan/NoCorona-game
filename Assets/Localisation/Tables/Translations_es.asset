@@ -50,5 +50,9 @@ MonoBehaviour:
     m_Localized: "\xA1Evita a la gente!"
     m_Metadata:
       m_Items: []
+  - m_Id: 1856924873420800
+    m_Localized: "\r\xA1LO HICISTE!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

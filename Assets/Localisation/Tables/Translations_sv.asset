@@ -50,5 +50,9 @@ MonoBehaviour:
     m_Localized: "Undvik m\xE4nniskorna!"
     m_Metadata:
       m_Items: []
+  - m_Id: 1856924873420800
+    m_Localized: DU KLARADE DET!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
