@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: Avoid the people!
     m_Metadata:
       m_Items: []
+  - m_Id: 1856924873420800
+    m_Key: you won
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
