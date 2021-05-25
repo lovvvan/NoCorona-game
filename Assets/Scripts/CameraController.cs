@@ -16,7 +16,19 @@ public class CameraController : MonoBehaviour
     private float halfHeight;
     private float halfWidth;
 
-
+    //Makes the camera a singleton
+    private static CameraController myInstance;
+    public static CameraController MyInstance
+    {
+        get
+        {
+            if (myInstance == null)
+            {
+                myInstance = FindObjectOfType<CameraController>();
+            }
+            return myInstance;
+        }
+    }
     // Use this for initialization
     void Start()
     {
@@ -39,6 +51,11 @@ public class CameraController : MonoBehaviour
         float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
         
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+    }
+
+    public Camera GetCamera()
+    {
+        return theCamera;
     }
 
 }
