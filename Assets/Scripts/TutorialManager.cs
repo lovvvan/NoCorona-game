@@ -7,7 +7,8 @@ public class TutorialManager : MonoBehaviour
   public GameObject[] popUps;
   private int popUpIndex;
   public GameObject EnemySpawn;
-  public float waitTime = 4f;
+  public float waitTime1 = 2f;
+  public float waitTime2 = 4f;
 
     // Update is called once per frame
     void Update()
@@ -32,18 +33,24 @@ public class TutorialManager : MonoBehaviour
       }
       else if(popUpIndex==1)
       {
-        if(waitTime==2)
+        if(waitTime1<=0)
         {
+          Debug.Log("Enemy spawn 1!");
           EnemySpawn.SetActive(true);
-          waitTime-=Time.deltaTime;
-        }
-        else if(waitTime<=0)
-        {
-          popUpIndex++;
+          waitTime2-=Time.deltaTime;
         }
         else
         {
-          waitTime-=Time.deltaTime;
+          waitTime1-=Time.deltaTime;
+        }
+        if(waitTime2<=0)
+        {
+          Debug.Log("Enemy spawn 2!");
+          popUpIndex++;
+        }
+        else
+        {  
+          waitTime2-=Time.deltaTime;
         }
       }
     }

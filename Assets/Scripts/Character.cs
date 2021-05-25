@@ -33,7 +33,6 @@ public abstract class Character : MonoBehaviour
         animator.SetTrigger("Die");
         animator.SetLayerWeight(2,1);
         animator.gameObject.GetComponent<AudioSource>().Play();
-      //  SceneManager.LoadScene("Menu");
        Invoke("LoadExitScene",2f);
       }
     }
