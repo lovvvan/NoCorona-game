@@ -20,6 +20,8 @@ public class Player : Character
     }
 
     private Vector3 position;
+    static public int score = -1;
+    
 
     // Start is called before the first frame update
     //Uses the character start as a base
@@ -64,7 +66,8 @@ public class Player : Character
     //Uses the character take damage as a base
     public override void TakeDamage(int damage)
     {
-      base.TakeDamage(damage);
+        score = (int)position.x + 1;
+        base.TakeDamage(damage);
     }
 
     //Moves the character in the direction of the key input, checks for both W,A,S,D and arrow keys
