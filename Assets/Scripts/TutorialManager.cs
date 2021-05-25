@@ -11,6 +11,9 @@ public class TutorialManager : MonoBehaviour
   public float waitTime2 = 4f;
 
     // Update is called once per frame
+    // The for-loop loops thorugh the pop-ups and activates the relevant one.
+    // If it is pop-up 0, it waits until the player has moved the character before going to the next one
+    // If it is popup 1, it waits 2 seconds before activating enemies and then removes the popup after another 2 seconds.
     void Update()
     {
       for (int i = 0; i < popUps.Length; i++)
@@ -49,7 +52,7 @@ public class TutorialManager : MonoBehaviour
           popUpIndex++;
         }
         else
-        {  
+        {
           waitTime2-=Time.deltaTime;
         }
       }

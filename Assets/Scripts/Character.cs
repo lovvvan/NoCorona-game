@@ -12,18 +12,23 @@ public abstract class Character : MonoBehaviour
 
     [SerializeField]
     private int health;
+
     // Start is called before the first frame update
+    //Getting the animator component for later use
     protected virtual void Start()
     {
         animator=GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame and calling the move function
     protected virtual void Update()
     {
         Move();
     }
 
+    // When the function is called from another class the health decreases
+    // If health reaches 0, the player "dies" by activating the die animation, playing death audio and not being able to move
+    // The Game over scene is then shown
     public virtual void TakeDamage(int damage)
     {
       health -= damage;
@@ -41,6 +46,8 @@ public abstract class Character : MonoBehaviour
       SceneManager.LoadScene("GameOver");
     }
 
+    // The character position are calculated and if the direction is not 0 they movement animation is activated
+    // Otherwise the idle animation is activated
     public void Move()
     {
         transform.Translate(direction*speed*Time.deltaTime);
