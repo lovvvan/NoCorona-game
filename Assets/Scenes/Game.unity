@@ -610,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalScale.x
-      value: 60
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalScale.y
@@ -618,7 +618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 29.5
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1288,7 +1288,7 @@ MonoBehaviour:
   - {fileID: 195411380233890877, guid: b108993c08a834a67b518d05ac5f5413, type: 3}
   - {fileID: 2585866235343108034, guid: b24bef394eceb4333a6dee4407645b3d, type: 3}
   enemyList: []
-  maxSpawn: 20
+  maxSpawn: 100
 --- !u!4 &1775190018
 Transform:
   m_ObjectHideFlags: 0
