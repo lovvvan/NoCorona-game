@@ -43,7 +43,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1538421851189248
-    m_Localized: "Anv\xE4nd piltangenterna W, A, S, D f\xF6r att g\xE5"
+    m_Localized: "Anv\xE4nd piltangenterna W, A, S, D f\xF6r att g\xE5 och shift
+      f\xF6r att springa"
     m_Metadata:
       m_Items: []
   - m_Id: 1538774298554368

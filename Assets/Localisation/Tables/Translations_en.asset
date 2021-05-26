@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1538421851189248
-    m_Localized: Use the arrow keys or W, A, S, D to move
+    m_Localized: Use the arrow keys or W, A, S, D to move and shift to run
     m_Metadata:
       m_Items: []
   - m_Id: 1538774298554368

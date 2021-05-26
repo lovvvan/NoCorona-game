@@ -43,7 +43,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1538421851189248
-    m_Localized: Utilice las teclas de flecha o W, A, S, D para moverse
+    m_Localized: "\rUsa las teclas de flecha o W, A, S, D para moverte y shift para
+      correr moverse"
     m_Metadata:
       m_Items: []
   - m_Id: 1538774298554368

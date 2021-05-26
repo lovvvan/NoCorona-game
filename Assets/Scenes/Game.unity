@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the arrow keys or W, A, S, D to move
+  m_text: Use the arrow keys or W, A, S, D to move and shift to run
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2188b0439cad047b9a0cf11ee2fcd1e8, type: 2}
   m_sharedMaterial: {fileID: -8764866011463820895, guid: 2188b0439cad047b9a0cf11ee2fcd1e8, type: 2}
