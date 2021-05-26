@@ -6,6 +6,8 @@ public class Enemy: Character
 {
     [SerializeField]
     private int damage;
+    [SerializeField]
+    public int prefabID;
     // Start is called before the first frame update
     // Uses character.start as base
     // calls the getInput() function

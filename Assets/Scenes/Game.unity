@@ -386,7 +386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.75, y: 4.25, z: -10}
+  m_LocalPosition: {x: 7, y: 4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -610,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalScale.x
-      value: 28
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalScale.y
@@ -618,11 +618,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.24
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5290244278646706612, guid: f0105673b14b9064abe596a6b92e1938, type: 3}
       propertyPath: m_LocalPosition.z
@@ -902,7 +902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604526078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.61, y: 4.33, z: 1}
+  m_LocalPosition: {x: 7, y: 4, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 599045015}
@@ -1227,9 +1227,24 @@ MonoBehaviour:
   - tileTag: Tree06
     color: {r: 0.6313726, g: 0.3764706, b: 0.043137256, a: 1}
     elementPrefab: {fileID: 6094933051868050311, guid: cdf7d18bdd78e8740b45239cf67f7800, type: 3}
-  - tileTag: Flower
+  - tileTag: Tree12
+    color: {r: 0.22745098, g: 0.09803922, b: 0, a: 1}
+    elementPrefab: {fileID: 1468466201315926219, guid: baa7ae4dfdf4977449d10d36c44703c4, type: 3}
+  - tileTag: Flower08
     color: {r: 0.9411765, g: 0, b: 0, a: 1}
     elementPrefab: {fileID: 5026207874499854482, guid: f0f1da71e90ecec48b2d195f1d14862d, type: 3}
+  - tileTag: Flower03
+    color: {r: 1, g: 0.9882353, b: 0, a: 1}
+    elementPrefab: {fileID: 4045997087841184675, guid: 896053183a04a1e47b4e79d09762f76d, type: 3}
+  - tileTag: Bush01
+    color: {r: 0.08627451, g: 0.45490196, b: 0, a: 1}
+    elementPrefab: {fileID: 4933257603919675368, guid: 5dbe6a3437fbaa14582e9049657be1d6, type: 3}
+  - tileTag: Bush02
+    color: {r: 0.09803922, g: 0.52156866, b: 0, a: 1}
+    elementPrefab: {fileID: 5965123937287052512, guid: efd21212ca7438a4ebf8c83276e11b6d, type: 3}
+  - tileTag: Flower44
+    color: {r: 0.7019608, g: 0.050980393, b: 0.78039217, a: 1}
+    elementPrefab: {fileID: 7849291899793112152, guid: 5b50d444f38243c4f809b678ca6c6f3b, type: 3}
   - tileTag: Road
     color: {r: 0.11372549, g: 0.5019608, b: 0.8627451, a: 1}
     elementPrefab: {fileID: 4519506028493522470, guid: a1a1b1013edf42249b38c9d681c11575, type: 3}
@@ -1273,7 +1288,7 @@ MonoBehaviour:
   - {fileID: 195411380233890877, guid: b108993c08a834a67b518d05ac5f5413, type: 3}
   - {fileID: 2585866235343108034, guid: b24bef394eceb4333a6dee4407645b3d, type: 3}
   enemyList: []
-  maxSpawn: 50
+  maxSpawn: 20
 --- !u!4 &1775190018
 Transform:
   m_ObjectHideFlags: 0

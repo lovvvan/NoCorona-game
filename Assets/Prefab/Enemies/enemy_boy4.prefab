@@ -162,6 +162,7 @@ MonoBehaviour:
   speed: 0.25
   health: 10
   damage: 10
+  prefabID: 3
 --- !u!95 &195411380233890876
 Animator:
   serializedVersion: 3
