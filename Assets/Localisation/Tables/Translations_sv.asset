@@ -54,5 +54,16 @@ MonoBehaviour:
     m_Localized: DU KLARADE DET!
     m_Metadata:
       m_Items: []
+  - m_Id: 2239195803279360
+    m_Localized: TILLBAKA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2243044052033536
+    m_Localized: "Varning v\xE4rldens inv\xE5nare!\n\n\r\rDet \xE4r en p\xE5g\xE5ende
+      pandemi och alla beh\xF6ver h\xE5lla avst\xE5nd fr\xE5n varandra. Om du inte
+      g\xF6r det s\xE5 blir du sjuk.\r\r\n\nSn\xE4lla var f\xF6rsiktig p\xE5v\xE4g 
+      till din destination!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
