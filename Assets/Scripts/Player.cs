@@ -20,7 +20,7 @@ public class Player : Character
     }
 
     private Vector3 position;
-    static public int score = -7;
+    static public int score = 0;
     
 
     // Start is called before the first frame update
@@ -68,7 +68,7 @@ public class Player : Character
     //Uses the character take damage as a base
     public override void TakeDamage(int damage)
     {
-        score = (int)position.x + 1;
+        score = (int)position.x -5;
         base.TakeDamage(damage);
     }
 

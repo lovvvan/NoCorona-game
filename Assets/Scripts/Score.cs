@@ -8,7 +8,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Player.score > -14)
+        if (Player.score > 0)
         {
             scoreText.text = Player.score.ToString();
         }
