@@ -51,6 +51,22 @@ MonoBehaviour:
     m_Key: you won
     m_Metadata:
       m_Items: []
+  - m_Id: 2239195803279360
+    m_Key: BACK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2243044052033536
+    m_Key: AboutText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2245304777695232
+    m_Key: MENU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248277805228032
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -10,7 +10,11 @@ public class GameOver : MonoBehaviour
     {
       SceneManager.LoadScene("Game");
     }
-
+    // Shows the Menu scene
+    public void Menu()
+    {
+      SceneManager.LoadScene("Menu");
+    }
     // Quits the game
     public void QuitGame()
     {

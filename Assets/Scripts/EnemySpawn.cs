@@ -21,6 +21,8 @@ public class EnemySpawn : MonoBehaviour
     private float halfWidth;
     private Vector3 spawnPoint;
     private Vector3 camPos;
+    private bool typeClose;
+    private int trySpawn;
 
     int chanceOfSpawn;
 
@@ -51,13 +53,37 @@ public class EnemySpawn : MonoBehaviour
         while (enemyList.Count < maxSpawn)
         {
             //spawnNum = Random.Range(0, spawnZones.Length - 1); // Grabs a random number
-            spawnPoint.x = Random.Range(halfWidth * 1.8f, 100);
-            spawnPoint.y = Random.Range(halfHeight - 0.1f, halfHeight + 1.7f);
+            spawnPoint.x = Random.Range(halfWidth * 2.5f, 200);
+            spawnPoint.y = Random.Range(halfHeight - 0.3f, halfHeight + 1.45f);
             spawnPoint.z = 0;
+            typeClose = false;
             enemyType = Random.Range(0, enemyPrefabs.Length); // Grabs a random number
-            GameObject go = Instantiate(enemyPrefabs[enemyType], spawnPoint, Quaternion.identity);
-            go.transform.parent = enemies;
-            enemyList.Add(go);
+            foreach (GameObject neighbor in enemyList)
+            {
+                Debug.Log((neighbor.GetComponent<Enemy>()).prefabID);
+                if (enemyType == (neighbor.GetComponent<Enemy>()).prefabID)
+                {
+                    Debug.Log(Vector3.Distance(spawnPoint, neighbor.transform.position));
+                   if (Vector3.Distance(spawnPoint, neighbor.transform.position) < 2)
+                   {
+                        typeClose = true;
+                        trySpawn++;
+                        if (trySpawn >= 100000)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            if (!typeClose)
+            {
+                trySpawn = 0;
+                GameObject go = Instantiate(enemyPrefabs[enemyType], spawnPoint, Quaternion.identity);
+                go.transform.parent = enemies;
+                enemyList.Add(go);
+            }
+            
         }
 
 

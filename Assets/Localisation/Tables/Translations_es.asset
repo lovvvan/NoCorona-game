@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 711294701568
-    m_Localized: "INFORMACI\xD3N"
+    m_Localized: INFO
     m_Metadata:
       m_Items: []
   - m_Id: 1527686425243648
@@ -52,6 +52,24 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1856924873420800
     m_Localized: "\r\xA1LO HICISTE!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2239195803279360
+    m_Localized: REGRESA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2243044052033536
+    m_Localized: "\xA1Advertencia a los ciudadanos del mundo!\n\n\r\rHay una pandemia
+      y todos deben mantenerse a distancia. Si no lo hace, se enfermar\xE1.\r\r\n\n\xA1Tenga
+      cuidado al ir a su destino!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2245304777695232
+    m_Localized: "MEN\xDA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248277805228032
+    m_Localized: 'PUNTAJE:'
     m_Metadata:
       m_Items: []
   references:

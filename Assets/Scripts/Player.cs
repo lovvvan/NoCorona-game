@@ -20,7 +20,7 @@ public class Player : Character
     }
 
     private Vector3 position;
-    static public int score = -1;
+    static public int score = -7;
     
 
     // Start is called before the first frame update
@@ -48,7 +48,7 @@ public class Player : Character
         position = GameObject.Find("Player").transform.position;
         //Debug.Log("position");
         //Debug.Log(position.x);
-        if(position.x > 22)
+        if(position.x > 58)
         {
             return true;
         }

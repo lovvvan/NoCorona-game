@@ -8,9 +8,9 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Player.score != -1)
+        if (Player.score > -14)
         {
-            scoreText.text = "SCORE: " + Player.score.ToString();
+            scoreText.text = Player.score.ToString();
         }
         else
         {
@@ -21,6 +21,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

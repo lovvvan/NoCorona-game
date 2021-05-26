@@ -54,5 +54,23 @@ MonoBehaviour:
     m_Localized: YOU MADE IT!
     m_Metadata:
       m_Items: []
+  - m_Id: 2239195803279360
+    m_Localized: BACK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2243044052033536
+    m_Localized: "Warning citizens of the world!\r\r\n\nThere is a pandemic going
+      on and everyone need to keep distance from each other. If you do not, you will
+      get sick. \n\n\r\rPlease be careful while going to your destination!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2245304777695232
+    m_Localized: MENU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248277805228032
+    m_Localized: 'SCORE:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
