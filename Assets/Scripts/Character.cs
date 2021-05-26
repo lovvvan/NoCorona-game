@@ -27,7 +27,7 @@ public abstract class Character : MonoBehaviour
     // Update is called once per frame and calling the move function
     protected virtual void Update()
     {
-        Move();    
+        Move();
     }
 
     // When the function is called from another class the health decreases
@@ -38,7 +38,8 @@ public abstract class Character : MonoBehaviour
       health -= damage;
       if(health<=0)
       {
-        speed = 0;
+        walkSpeed = 0;
+        runSpeed = 0;
         animator.SetTrigger("Die");
         animator.SetLayerWeight(2,1);
         animator.gameObject.GetComponent<AudioSource>().Play();
