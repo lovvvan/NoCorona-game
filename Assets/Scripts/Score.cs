@@ -10,7 +10,7 @@ public class Score : MonoBehaviour
     {
         if (Player.score > -14)
         {
-            scoreText.text = "SCORE: " + Player.score.ToString();
+            scoreText.text = Player.score.ToString();
         }
         else
         {
@@ -21,6 +21,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

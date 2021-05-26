@@ -64,5 +64,13 @@ MonoBehaviour:
       cuidado al ir a su destino!"
     m_Metadata:
       m_Items: []
+  - m_Id: 2245304777695232
+    m_Localized: "MEN\xDA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248277805228032
+    m_Localized: 'PUNTAJE:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

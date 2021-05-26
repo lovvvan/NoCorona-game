@@ -64,5 +64,13 @@ MonoBehaviour:
       get sick. \n\n\r\rPlease be careful while going to your destination!"
     m_Metadata:
       m_Items: []
+  - m_Id: 2245304777695232
+    m_Localized: MENU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248277805228032
+    m_Localized: 'SCORE:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

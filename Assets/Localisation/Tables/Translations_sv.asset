@@ -65,5 +65,13 @@ MonoBehaviour:
       till din destination!"
     m_Metadata:
       m_Items: []
+  - m_Id: 2245304777695232
+    m_Localized: MENY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2248277805228032
+    m_Localized: "PO\xC4NG:"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
