@@ -43,6 +43,7 @@ public class Player : Character
         }
     }
 
+    // Checks if the player has walked to the end of the road
     private bool hasWon()
     {
         position = GameObject.Find("Player").transform.position;
@@ -58,6 +59,7 @@ public class Player : Character
         }
     }
 
+    // Loads the Finished scene
     private void LoadWonScene()
     {
         SceneManager.LoadScene("Finished");
@@ -68,6 +70,16 @@ public class Player : Character
     {
         score = (int)position.x + 1;
         base.TakeDamage(damage);
+    }
+
+    public override void sprint()
+    {
+        base.sprint();
+    }
+
+    public override void walk()
+    {
+        base.walk();
     }
 
     //Moves the character in the direction of the key input, checks for both W,A,S,D and arrow keys
@@ -89,6 +101,14 @@ public class Player : Character
         if(Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.RightArrow))
         {
             direction+=Vector2.right;
+        }
+        if (Input.GetKey("left shift"))
+        {
+            sprint();
+        }
+        else
+        {
+            walk();
         }
     }
 }

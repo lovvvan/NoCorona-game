@@ -7,6 +7,8 @@ public abstract class Character : MonoBehaviour
 {
     [SerializeField]
     protected float speed;
+    protected float walkSpeed;
+    protected float runSpeed;
     private Animator animator;
     protected Vector2 direction;
 
@@ -18,6 +20,8 @@ public abstract class Character : MonoBehaviour
     protected virtual void Start()
     {
         animator=GetComponent<Animator>();
+        walkSpeed = speed;
+        runSpeed = speed * (float)2;
     }
 
     // Update is called once per frame and calling the move function
@@ -38,12 +42,22 @@ public abstract class Character : MonoBehaviour
         animator.SetTrigger("Die");
         animator.SetLayerWeight(2,1);
         animator.gameObject.GetComponent<AudioSource>().Play();
-       Invoke("LoadExitScene",2f);
+        Invoke("LoadExitScene",2f);
       }
     }
     private void LoadExitScene()
     {
       SceneManager.LoadScene("GameOver");
+    }
+
+    public virtual void sprint()
+    {
+        speed = runSpeed;
+    }
+
+    public virtual void walk()
+    {
+        speed = walkSpeed;
     }
 
     // The character position are calculated and if the direction is not 0 they movement animation is activated
