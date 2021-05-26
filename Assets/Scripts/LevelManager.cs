@@ -15,13 +15,13 @@ public class LevelManager : MonoBehaviour
     private Sprite defaultTile;
 
     //Initializes the world start position to the lower left corner of the camera
-    private Vector3 WorldStartPos
-    {
+    private Vector3 WorldStartPos = new Vector3(0, -1, 0);
+    /*{
         get
         {
             return Camera.main.ScreenToWorldPoint(new Vector3(0,0));
         }
-    }
+    }*/
 
     //Generate the map before the first frame update
     void Start()
