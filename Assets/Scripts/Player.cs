@@ -49,7 +49,7 @@ public class Player : Character
         position = GameObject.Find("Player").transform.position;
         //Debug.Log("position");
         //Debug.Log(position.x);
-        if(position.x > 58)
+        if(position.x > 56)
         {
             return true;
         }

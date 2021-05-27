@@ -62,3 +62,6 @@ crashlytics-build.properties
 # EditorUserSettings
 #*EditorUserSettings.asset
 
+
+.fake
+.ionide
