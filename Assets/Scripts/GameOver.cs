@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
     // Shows the game scene
     public void PlayAgain()
     {
-      SceneManager.LoadScene("Game");
+      SceneManager.LoadScene("Game2");
     }
     // Shows the Menu scene
     public void Menu()

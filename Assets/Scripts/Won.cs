@@ -7,7 +7,7 @@ public class Won : MonoBehaviour
 {
     public void PlayAgain()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Game2");
     }
 
     public void Menu()
