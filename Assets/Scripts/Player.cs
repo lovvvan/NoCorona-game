@@ -102,7 +102,7 @@ public class Player : Character
         {
             direction+=Vector2.right;
         }
-        if (Input.GetKey("left shift"))
+        if (Input.GetKey("left shift")||Input.GetKey("right shift"))
         {
             sprint();
         }
