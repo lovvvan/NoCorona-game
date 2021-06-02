@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
     private Color defaultColor;
     private Color fadedColor;
 
-    //TODO: What does this function do?
+    // Compares which element is in front of the other
     public int CompareTo(Obstacle other)
     {
         if (MySpriteRenderer.sortingOrder > other.MySpriteRenderer.sortingOrder)
@@ -27,7 +27,6 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
     }
 
     // Start is called before the first frame update
-    //TODO: What does this function do?
     void Start()
     {
         MySpriteRenderer = GetComponent<SpriteRenderer>();

@@ -14,7 +14,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private Sprite defaultTile;
 
-    //Initializes the world start position to the lower left corner of the camera
+    //Initializes the world start position so that the ma originates from the lower left corner
     private Vector3 WorldStartPos = new Vector3(0, -1, 0);
     /*{
         get
@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
     }
 
 
-    //TODO: What does this do?
+    // Generates the map based on the pixels in the map files
     private void GenerateMap()
     {
         int height = mapData[0].height;
@@ -51,6 +51,7 @@ public class LevelManager : MonoBehaviour
                         float yPos = WorldStartPos.y + (defaultTile.bounds.size.y* y);
                         GameObject go = Instantiate(newElement.MyElementPrefab);
                         go.transform.position = new Vector2(xPos,yPos);
+                        // If spawning a non-ground tile element, give the element a sorting order based on yPos
                         if (newElement.MyTileTag == "Tree01" || newElement.MyTileTag == "Tree06" || newElement.MyTileTag == "Tree12"|| newElement.MyTileTag == "Bush01"|| newElement.MyTileTag == "Bush02"|| newElement.MyTileTag == "Flower03"|| newElement.MyTileTag == "Flower08"|| newElement.MyTileTag == "Flower44")
                         {
                             go.GetComponent<SpriteRenderer>().sortingOrder = height*2 - y*2;
@@ -63,7 +64,7 @@ public class LevelManager : MonoBehaviour
     }
 }
 
-//TODO: Please explain this class and its methods
+// Map Element is any element spawned for the map, i.e. grass tiles, trees, etc.
 [Serializable]
 public class MapElement
 {

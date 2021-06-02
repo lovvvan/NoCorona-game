@@ -42,18 +42,18 @@ public class EnemySpawn : MonoBehaviour
 
     }
 
-    //Spawn the enemies by randomising a spawn location and an enemy type
-    //Then it adds this random enemy and the random spawn zone to the enemy list and the game
+    // Spawn the enemies by randomising a spawn location and an enemy type
+    // Then it adds this random enemy and the random spawn zone to the enemy list and the game
     private void SpawnEnemy()
     {
         while (enemiesSpawned < maxSpawn)
         {
             typeClose = false;
-            enemyType = UnityEngine.Random.Range(0, enemyPrefabs.Length); // Grabs a random number
-            spawnPoint.x = UnityEngine.Random.Range(halfWidth * 2.6f, 200);
-            spawnPoint.y = UnityEngine.Random.Range(3.7f, 5.45f);
-            spawnPoint.z = 0;
-            foreach (Transform neighbor in enemies)
+            enemyType = UnityEngine.Random.Range(0, enemyPrefabs.Length);   // Grabs a random number for specific enemiy prefabs
+            spawnPoint.x = UnityEngine.Random.Range(halfWidth * 2.6f, 200); // Defines the spawn area for enemies in x,
+            spawnPoint.y = UnityEngine.Random.Range(3.7f, 5.45f);           // y,
+            spawnPoint.z = 0;                                               // and z
+            foreach (Transform neighbor in enemies)     // Checks if there are any enemies of the same type (i.e. with the same speed) in the proximity of the proposed spwan point
             {
                 if (enemyType == (neighbor.gameObject.GetComponent<Enemy>()).prefabID)
                 {
@@ -65,13 +65,13 @@ public class EnemySpawn : MonoBehaviour
                 }
             }
             
-            if (!typeClose)
+            if (!typeClose) // If no enemies of same type are to close, the enemy is spawned
             {
                 triedSpawns = 0;
                 GameObject go = Instantiate(enemyPrefabs[enemyType], spawnPoint, Quaternion.identity, enemies);
                 enemiesSpawned++;
             }
-            else
+            else            // Otherwise, a new spawn is attempted, unless too many consecutive failed attempts have been made, in which case spawning of enemies is discontinued
             {
                 triedSpawns++;
                 if (triedSpawns > maxSpawnTries)
