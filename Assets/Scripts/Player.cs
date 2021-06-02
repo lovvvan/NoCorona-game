@@ -72,11 +72,12 @@ public class Player : Character
         base.TakeDamage(damage);
     }
 
+    // Calls the sprint method in character class to change speed to run
     public override void sprint()
     {
         base.sprint();
     }
-
+    // Calls the walk method in character class to change speed to walk
     public override void walk()
     {
         base.walk();

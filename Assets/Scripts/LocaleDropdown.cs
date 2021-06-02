@@ -8,7 +8,9 @@ public class LocaleDropdown : MonoBehaviour
 {
     public TMP_Dropdown dropdown;
 
-    //TODO: What does this function do?
+    // Checks which locales (languages) are available and adds the available languages
+    // to the dropdown options for the dropdown list. Also adds a listener to change 
+    // language dependent on which locale is selected in the dropdown 
     IEnumerator Start()
     {
         // Wait for the localization system to initialize, loading Locales, preloading etc.
@@ -35,7 +37,6 @@ public class LocaleDropdown : MonoBehaviour
         dropdown.value = selected;
         dropdown.onValueChanged.AddListener(LocaleSelected);
     }
-
     static void LocaleSelected(int index)
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];

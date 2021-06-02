@@ -11,6 +11,8 @@ public class Earth : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Gets the image component representing the earth
+    // then rotates it around the z axis every frame
     void Update()
     {
         RectTransform rectTransform = GetComponent<RectTransform>();

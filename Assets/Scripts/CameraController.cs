@@ -29,7 +29,9 @@ public class CameraController : MonoBehaviour
             return myInstance;
         }
     }
-    // Use this for initialization
+
+    // Start is called before the first frame update
+    // Gets the boundary values of the bound box and the width and height of the camera
     void Start()
     {
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
@@ -44,6 +46,9 @@ public class CameraController : MonoBehaviour
 
     }
 
+    // Update is called once per frame
+    // Makes sure that the camera does not go outside of the boundaries of the boundbox
+    // such that the areas outside is not visible.
     void Update()
     {
         transform.position = player.transform.position + offset;

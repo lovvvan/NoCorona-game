@@ -51,17 +51,19 @@ public abstract class Character : MonoBehaviour
       SceneManager.LoadScene("GameOver");
     }
 
+    // Changes the speed of the player to the run speed
     public virtual void sprint()
     {
         speed = runSpeed;
     }
 
+    // Changes the speed of the player to the walk speed
     public virtual void walk()
     {
         speed = walkSpeed;
     }
 
-    // The character position are calculated and if the direction is not 0 they movement animation is activated
+    // The character's position is calculated and if the direction is not 0 they movement animation is activated
     // Otherwise the idle animation is activated
     public void Move()
     {
@@ -77,6 +79,7 @@ public abstract class Character : MonoBehaviour
         }
     }
 
+    // Starts the animation for when the player is walking
     public void AnimateMovement(Vector2 direction)
     {
         animator.SetLayerWeight(1,1);
